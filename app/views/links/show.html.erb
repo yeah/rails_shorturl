@@ -1,0 +1,13 @@
+<h1>Your short URL has been created.</h1>
+<p>
+  <b>Long URL:</b>
+  <%=h @link.long %>
+</p>
+
+<p>
+  <b>Short URL:</b>
+  <%=link_to "#{BASE_URL}/#{@link.short}","#{BASE_URL}/#{@link.short}" %>
+</p>
+
+
+<%= link_to 'Create another short URL', new_link_path %>

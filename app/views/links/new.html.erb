@@ -1,0 +1,17 @@
+<h1>Create a new short url</h1>
+
+<% form_for(@link) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label :long, 'Enter a long URL to make short:' %><br />
+    <%= f.text_field :long %>
+  </p>
+  <p>
+    <%= f.label :short, 'Custom alias (optional):' %><br/>
+    <%= BASE_URL %>/ <%= f.text_field :short, :style => 'width:90px;' %>
+  </p>
+  <p>
+    <%= f.submit "Create" %>
+  </p>
+<% end %>
