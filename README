@@ -1,8 +1,8 @@
-h1. Rails Short URL
+== Rails Short URL
 
 Run your own short URL service.
 
-h2. Installation
+= Installation
 
 * Edit config/database.yml
 * Edit config/initializers/configuration.rb
